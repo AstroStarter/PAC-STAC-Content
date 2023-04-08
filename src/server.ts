@@ -17,5 +17,4 @@ payload.init({
 	},
 });
 
-
 app.listen(3000);
