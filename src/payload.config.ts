@@ -15,5 +15,5 @@ export default buildConfig({
 	graphQL: {
 		schemaOutputFile: resolve(__dirname, "generated-schema.graphql"),
 	},
-	cookiePrefix: env["COOKIE"] ?? "payload-",
+	cookiePrefix: env["COOKIE"],
 });
