@@ -22,7 +22,7 @@
 		"serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js"
 	},
 	"dependencies": {
-		"dotenv": "16.0.3",
+		"dotenv": "16.1.1",
 		"express": "4.18.2",
 		"payload": "1.8.3",
 		"zod": "3.21.4"
