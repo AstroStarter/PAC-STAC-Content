@@ -1,6 +1,6 @@
-import { resolve } from "path";
 import { buildConfig } from "payload/config";
 import Users from "./collections/Users";
+import { resolve } from "path";
 import env from "./lib/env";
 
 export default buildConfig({
