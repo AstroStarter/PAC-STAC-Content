@@ -1,13 +1,13 @@
 {
 	"name": "pac-stac-content",
 	"version": "0.0.1",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/astro-starters/pac-stac-content.git"
-	},
 	"homepage": "https://github.com/astro-starters/pac-stac-content#readme",
 	"bugs": {
 		"url": "https://github.com/astro-starters/pac-stac-content/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/astro-starters/pac-stac-content.git"
 	},
 	"license": "MIT",
 	"main": "./dist/server.js",
