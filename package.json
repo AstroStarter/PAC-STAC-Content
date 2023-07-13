@@ -1,25 +1,6 @@
 {
-	"name": "pac-stac-content",
-	"version": "0.0.1",
-	"homepage": "https://github.com/astro-starters/pac-stac-content#readme",
 	"bugs": {
 		"url": "https://github.com/astro-starters/pac-stac-content/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/astro-starters/pac-stac-content.git"
-	},
-	"license": "MIT",
-	"main": "./dist/server.js",
-	"scripts": {
-		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
-		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
-		"build:server": "tsc",
-		"copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
-		"dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
-		"generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
-		"generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
-		"serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js"
 	},
 	"dependencies": {
 		"dotenv": "16.3.1",
@@ -35,5 +16,24 @@
 		"nodemon": "3.0.1",
 		"ts-node": "10.9.1",
 		"typescript": "5.1.6"
-	}
+	},
+	"homepage": "https://github.com/astro-starters/pac-stac-content#readme",
+	"license": "MIT",
+	"main": "./dist/server.js",
+	"name": "pac-stac-content",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/astro-starters/pac-stac-content.git"
+	},
+	"scripts": {
+		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
+		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
+		"build:server": "tsc",
+		"copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
+		"dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
+		"generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
+		"generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
+		"serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js"
+	},
+	"version": "0.0.1"
 }
