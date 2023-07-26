@@ -24,7 +24,11 @@
 	"dependencies": {
 		"dotenv": "16.3.1",
 		"express": "4.18.2",
+<<<<<<< HEAD
 		"payload": "1.11.6",
+=======
+		"payload": "1.11.4",
+>>>>>>> ef174553ad385732722e65c46f5cd41710b797e8
 		"zod": "3.21.4"
 	},
 	"devDependencies": {
