@@ -1,6 +1,5 @@
 import { resolve } from "path";
 import { buildConfig } from "payload/config";
-
 import Users from "./collections/Users";
 import env from "./lib/env";
 
