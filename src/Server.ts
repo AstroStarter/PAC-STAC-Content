@@ -1,6 +1,6 @@
 import express from "express";
 import payload from "payload";
-import env from "./lib/env";
+import ENV from "./lib/Env";
 
 const app = express();
 
@@ -9,8 +9,8 @@ app.get("/", (_, res) => {
 });
 
 payload.init({
-	secret: env["PAYLOAD_SECRET"],
-	mongoURL: env["MONGODB_URI"],
+	secret: ENV["PAYLOAD_SECRET"],
+	mongoURL: ENV["MONGODB_URI"],
 	express: app,
 	onInit: () => {
 		payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`);
