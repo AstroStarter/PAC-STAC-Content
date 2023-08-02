@@ -1,7 +1,7 @@
 import { resolve } from "path";
 import { buildConfig } from "payload/config";
 import Users from "./collections/Users";
-import ENV from "./lib/Env";
+import Environment from "./lib/Environment";
 
 export default buildConfig({
 	serverURL: "http://localhost:3000",
@@ -15,5 +15,5 @@ export default buildConfig({
 	graphQL: {
 		schemaOutputFile: resolve(__dirname, "generated-schema.graphql"),
 	},
-	cookiePrefix: ENV["COOKIE"],
+	cookiePrefix: Environment["COOKIE"],
 });
