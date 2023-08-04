@@ -3,7 +3,7 @@
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
-		"outDir": "./dist",
+		"outDir": "./Target",
 		"rootDir": "./src",
 		"target": "ESNext"
 	},

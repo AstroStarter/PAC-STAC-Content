@@ -10,7 +10,7 @@
 		"url": "git+https://github.com/astro-starters/pac-stac-content.git"
 	},
 	"license": "MIT",
-	"main": "./dist/server.js",
+	"main": "./Target/server.js",
 	"scripts": {
 		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
 		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload build",
