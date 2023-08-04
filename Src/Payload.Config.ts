@@ -1,4 +1,4 @@
-import { resolve } from "path";
+import { resolve as Resolve } from "path";
 import { buildConfig } from "payload/config";
 import Users from "./collections/Users";
 import Environment from "./Lib/Environment";
@@ -10,10 +10,10 @@ export default buildConfig({
 	},
 	collections: [Users],
 	typescript: {
-		outputFile: resolve(__dirname, "payload-types.ts"),
+		outputFile: Resolve(__dirname, "payload-types.ts"),
 	},
 	graphQL: {
-		schemaOutputFile: resolve(__dirname, "generated-schema.graphql"),
+		schemaOutputFile: Resolve(__dirname, "generated-schema.graphql"),
 	},
 	cookiePrefix: Environment["COOKIE"],
 });
