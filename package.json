@@ -13,12 +13,12 @@
 	"main": "./dist/server.js",
 	"scripts": {
 		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
-		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
+		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload build",
 		"build:server": "tsc",
-		"copyfiles": "copyfiles -u 1 \"Src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
-		"dev": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts nodemon",
-		"generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:graphQLSchema",
-		"generate:types": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload generate:types",
+		"copyfiles": "copyfiles -u 1 \"Source/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" dist/",
+		"dev": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts nodemon",
+		"generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload generate:graphQLSchema",
+		"generate:types": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload generate:types",
 		"serve": "cross-env PAYLOAD_CONFIG_PATH=dist/payload.config.js NODE_ENV=production node dist/server.js"
 	},
 	"dependencies": {
