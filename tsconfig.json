@@ -3,11 +3,11 @@
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
-		"outDir": "./dist",
+		"outDir": "./Target",
 		"rootDir": "./src",
 		"target": "ESNext"
 	},
-	"exclude": ["node_modules", "dist", "build"],
+	"exclude": ["node_modules", "Target", "build"],
 	"extends": "@lightrix/config/base/ts",
 	"include": ["src"],
 	"ts-node": {

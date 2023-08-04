@@ -1,6 +1,6 @@
 import express from "express";
 import payload from "payload";
-import Environment from "./Lib/Environment";
+import Environment from "./Library/Environment";
 
 const app = express();
 
