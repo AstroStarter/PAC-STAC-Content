@@ -7,7 +7,7 @@
 		"rootDir": "./src",
 		"target": "ESNext"
 	},
-	"exclude": ["node_modules", "dist", "build"],
+	"exclude": ["node_modules", "Target"],
 	"extends": "@lightrix/config/base/ts",
 	"include": ["src"],
 	"ts-node": {
