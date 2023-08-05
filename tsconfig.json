@@ -8,7 +8,7 @@
 		"target": "ESNext"
 	},
 	"exclude": ["node_modules", "Target"],
-	"extends": "@lightrix/configuration/base/ts",
+	"extends": "@lightrix/configuration/Base/TypeScript",
 	"include": ["src"],
 	"ts-node": {
 		"transpileOnly": true
