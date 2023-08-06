@@ -9,7 +9,7 @@
 	},
 	"exclude": ["node_modules", "Target"],
 	"extends": "@lightrix/configuration/Base/TypeScript",
-	"include": ["src"],
+	"include": ["Source"],
 	"ts-node": {
 		"transpileOnly": true
 	}
