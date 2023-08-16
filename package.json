@@ -1,13 +1,13 @@
 {
 	"name": "pac-stac-content",
 	"version": "2.0.0",
-	"homepage": "https://github.com/astro-starters/pac-stac-content#readme",
+	"homepage": "https://github.com/AstroStarter/pac-stac-content#readme",
 	"bugs": {
-		"url": "https://github.com/astro-starters/pac-stac-content/issues"
+		"url": "https://github.com/AstroStarter/pac-stac-content/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/astro-starters/pac-stac-content.git"
+		"url": "git+https://github.com/AstroStarter/pac-stac-content.git"
 	},
 	"main": "./Target/server.js",
 	"scripts": {
