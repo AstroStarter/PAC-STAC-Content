@@ -4,11 +4,11 @@
 		"jsx": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"outDir": "./Target",
-		"rootDir": "./src",
+		"rootDir": "./Source",
 		"target": "ESNext"
 	},
 	"exclude": ["node_modules", "Target"],
-	"extends": "@lightrix/configuration/Base/TypeScript",
+	"extends": "typescript-esbuild/Target/Configuration/TypeScript",
 	"include": ["Source"],
 	"ts-node": {
 		"transpileOnly": true
