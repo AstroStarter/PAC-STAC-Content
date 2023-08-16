@@ -1,7 +1,7 @@
 import { resolve as Resolve } from "path";
 import { buildConfig } from "payload/config";
-import Users from "./collections/Users";
 import Environment from "./Library/Environment";
+import Users from "./collections/Users";
 
 export default buildConfig({
 	serverURL: "http://localhost:3000",
