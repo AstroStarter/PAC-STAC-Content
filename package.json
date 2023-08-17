@@ -1,17 +1,18 @@
 {
-	"name": "pac-stac-content",
-	"version": "2.0.0",
-	"homepage": "https://github.com/AstroStarter/pac-stac-content#readme",
+	"name": "pac-stack-content",
+	"version": "0.0.1",
+	"homepage": "https://github.com/AstroStarter/pac-stack-content#readme",
 	"bugs": {
-		"url": "https://github.com/AstroStarter/pac-stac-content/issues"
+		"url": "https://github.com/AstroStarter/pac-stack-content/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AstroStarter/pac-stac-content.git"
+		"url": "git+https://github.com/AstroStarter/pac-stack-content.git"
 	},
+	"license": "MIT",
 	"main": "./Target/server.js",
 	"scripts": {
-		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
+		"prepublishOnly": "npm run copyfiles && npm run build:payload && npm run build:server",
 		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload build",
 		"build:server": "tsc",
 		"copyfiles": "copyfiles -u 1 \"Source/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" Target/",
@@ -32,6 +33,7 @@
 		"cross-env": "7.0.3",
 		"nodemon": "3.0.1",
 		"ts-node": "10.9.1",
-		"typescript": "5.1.6"
+		"typescript": "5.1.6",
+		"typescript-esbuild": "0.1.13"
 	}
 }
