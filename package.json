@@ -1,6 +1,7 @@
 {
 	"name": "pac-stack-content",
 	"version": "0.0.1",
+	"private": "false",
 	"homepage": "https://github.com/AstroStarter/pac-stack-content#readme",
 	"bugs": {
 		"url": "https://github.com/AstroStarter/pac-stack-content/issues"
@@ -10,15 +11,21 @@
 		"url": "git+https://github.com/AstroStarter/pac-stack-content.git"
 	},
 	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
+	"type": "module",
 	"main": "./Target/server.js",
 	"scripts": {
-		"prepublishOnly": "npm run copyfiles && npm run build:payload && npm run build:server",
 		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload build",
 		"build:server": "tsc",
 		"copyfiles": "copyfiles -u 1 \"Source/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png}\" Target/",
 		"dev": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts nodemon",
 		"generate:graphQLSchema": "PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload generate:graphQLSchema",
 		"generate:types": "cross-env PAYLOAD_CONFIG_PATH=Source/payload.config.ts payload generate:types",
+		"prepublishOnly": "npm run copyfiles && npm run build:payload && npm run build:server",
 		"serve": "cross-env PAYLOAD_CONFIG_PATH=Target/payload.config.js NODE_ENV=production node Target/server.js"
 	},
 	"dependencies": {
@@ -35,5 +42,8 @@
 		"ts-node": "10.9.1",
 		"typescript": "5.1.6",
 		"typescript-esbuild": "0.1.13"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
