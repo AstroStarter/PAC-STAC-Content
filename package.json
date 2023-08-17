@@ -1,7 +1,7 @@
 {
 	"name": "pac-stack-content",
 	"version": "0.0.1",
-	"private": "false",
+	"private": false,
 	"homepage": "https://github.com/AstroStarter/pac-stack-content#readme",
 	"bugs": {
 		"url": "https://github.com/AstroStarter/pac-stack-content/issues"
