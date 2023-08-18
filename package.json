@@ -2,13 +2,13 @@
 	"name": "pac-stack-content",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "https://github.com/AstroStarter/pac-stack-content#readme",
+	"homepage": "https://github.com/AstroStarter/PACStack-content#readme",
 	"bugs": {
-		"url": "https://github.com/AstroStarter/pac-stack-content/issues"
+		"url": "https://github.com/AstroStarter/PACStack-content/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AstroStarter/pac-stack-content.git"
+		"url": "git+https://github.com/AstroStarter/PACStack-content.git"
 	},
 	"license": "MIT",
 	"author": {
