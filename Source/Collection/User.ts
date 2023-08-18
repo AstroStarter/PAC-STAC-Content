@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload/types";
 
 export default {
-	slug: "users",
+	slug: "User",
 	auth: true,
 	admin: {
 		useAsTitle: "email",
