@@ -1,4 +1,4 @@
-import type { CollectionConfig } from "payload/types";
+import type { CollectionConfig as Type } from "payload/types";
 
 export default {
 	slug: "User",
@@ -15,4 +15,4 @@ export default {
 			type: "text",
 		},
 	],
-} satisfies CollectionConfig;
+} satisfies Type as Type;
