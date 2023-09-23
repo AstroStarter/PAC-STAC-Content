@@ -15,4 +15,4 @@ export default {
 			type: "text",
 		},
 	],
-} satisfies Type as Type;
+} satisfies Type;
