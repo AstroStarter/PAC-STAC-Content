@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"baseUrl": "./",
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
