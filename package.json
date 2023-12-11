@@ -39,7 +39,7 @@
 		"copyfiles": "2.4.1",
 		"cross-env": "7.0.3",
 		"nodemon": "3.0.2",
-		"ts-node": "10.9.1",
+		"ts-node": "10.9.2",
 		"typescript-esbuild": "0.3.2"
 	},
 	"publishConfig": {
